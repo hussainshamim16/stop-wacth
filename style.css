@@ -1,0 +1,11 @@
+:root{
+    --pink:#ff004d;
+    --blue: #00204a;
+    --white: white;
+    --yellow: #fdbe34;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--white);
+}
