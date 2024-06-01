@@ -24,13 +24,21 @@ if(miniSecond > 99){
     second++ 
 sec.innerHTML = second
 
-}else if(sec > 60){
+}else if(second > 59){
     second = 0;   
     minutes++ 
-min.innerHTML = minutes
+min.innerHTML = minutes;
 }
-}
+else if(minutes > 59){
+    minutes = 0;   
+    hours++ 
+hour.innerHTML = hours;
 
+}
+if(hours > 12){
+    hours = 1;
+}
+}
 
 
 
