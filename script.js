@@ -8,6 +8,7 @@ var sec = document.getElementById("sec");
 var min = document.getElementById("min");
 
 var hour = document.getElementById("hou");
+var watch = document.getElementById("wacth");
 
 var time;
 
@@ -54,6 +55,7 @@ if(hours > 12){
 function start(){
     
   time =   setInterval(en, 10);
+  watch.src = "https://www.icegif.com/wp-content/uploads/2023/08/icegif-699.gif"
 }
 
 
@@ -62,6 +64,7 @@ function start(){
 
 function stop(){
 clearInterval(time)
+watch.src = ""
 }
 
 
@@ -74,5 +77,6 @@ ms.innerHTML = "00"
 sec.innerHTML = "00"
 min.innerHTML = "00"
 hour.innerHTML = "00"
+watch.src = ""
 
 }
