@@ -106,11 +106,18 @@ cursor: pointer;
     justify-content: space-between; */
 }
 
-@media(max-width:500px){
+
+@media screen and (max-width : 600px){
+    
     #container{
         width: 100%;
         position: relative;
     }
+
+    #container .image img{
+        width: 30%;
+    }
+    
     #hero{
         
         text-align: center;
@@ -119,7 +126,7 @@ cursor: pointer;
 
     }
     #hero h1{
-        font-size: 0.9rem;
+        font-size: 01rem;
         
         
     }
@@ -131,4 +138,9 @@ cursor: pointer;
         
         
     }
+    .btS button{
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
 }
+

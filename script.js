@@ -10,6 +10,10 @@ var min = document.getElementById("min");
 var hour = document.getElementById("hou");
 var watch = document.getElementById("wacth");
 
+var sta = document.getElementById("a");
+var sto = document.getElementById("b");
+var res = document.getElementById("c");
+
 var time;
 
 var miniSecond = 0;
@@ -48,14 +52,20 @@ if(hours > 12){
 
 
 
+var update = 10;
+var duedate = 20;
 
 
 
 
-function start(){
+function start(hale){
+    time =   setInterval(en, 10);
+    watch.src = "icegif-699.gif";
+
+
     
-  time =   setInterval(en, 10);
-  watch.src = "https://www.icegif.com/wp-content/uploads/2023/08/icegif-699.gif"
+    console.log("start");
+  
 }
 
 
@@ -63,8 +73,11 @@ function start(){
 
 
 function stop(){
+    watch.src = "stop-removebg-preview.png";
 clearInterval(time)
-watch.src = "stop-removebg-preview.png";
+
+console.log("stop");
+
 }
 
 
@@ -79,4 +92,5 @@ min.innerHTML = "00"
 hour.innerHTML = "00"
 watch.src = "stop-removebg-preview.png";
 
+console.log("reset",res.setAttribute("disabled",true));
 }
