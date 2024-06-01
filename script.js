@@ -64,7 +64,7 @@ function start(){
 
 function stop(){
 clearInterval(time)
-watch.src = ""
+watch.src = "stop-removebg-preview.png";
 }
 
 
@@ -77,6 +77,6 @@ ms.innerHTML = "00"
 sec.innerHTML = "00"
 min.innerHTML = "00"
 hour.innerHTML = "00"
-watch.src = ""
+watch.src = "stop-removebg-preview.png";
 
 }
