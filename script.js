@@ -9,10 +9,14 @@ var min = document.getElementById("min");
 
 var hour = document.getElementById("hou");
 
+var time;
+
 var miniSecond = 0;
 var second = 0;
 var minutes = 0;
 var hours = 0;
+
+
 
 function en(){
     miniSecond++
@@ -43,15 +47,13 @@ if(hours > 12){
 
 
 
-setInterval(en, 10)
-
-
 
 
 
 
 function start(){
-console.log("start")
+    
+  time =   setInterval(en, 10);
 }
 
 
@@ -59,7 +61,7 @@ console.log("start")
 
 
 function stop(){
-console.log("stop")
+clearInterval(time)
 }
 
 
@@ -67,5 +69,10 @@ console.log("stop")
 
 
 function reset(){
-  console.log("reset")  
+    clearInterval(time)
+ms.innerHTML = "00"
+sec.innerHTML = "00"
+min.innerHTML = "00"
+hour.innerHTML = "00"
+
 }
