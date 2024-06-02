@@ -112,10 +112,11 @@ cursor: pointer;
     #container{
         width: 100%;
         position: relative;
+        margin-top: 7%;
     }
 
     #container .image img{
-        width: 30%;
+        width: 50%;
     }
     
     #hero{
@@ -126,7 +127,7 @@ cursor: pointer;
 
     }
     #hero h1{
-        font-size: 01rem;
+        font-size: 1.9rem;
         
         
     }
@@ -139,7 +140,7 @@ cursor: pointer;
         
     }
     .btS button{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 10px 20px;
     }
 }
